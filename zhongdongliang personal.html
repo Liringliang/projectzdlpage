@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>钟东良的主页</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 改 */
+.div {
+  background-color: white;
+  width:400px
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+ <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+li a:hover, .dropdown:hover
+.dropbtn{
+  background-color: #111;
+}
+
+li.dropdown{
+  display:inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+
+ <body>
+<div class="header">
+  <h1>钟东良的主页</h1>
+  <p>记录生活，记录美好瞬间</p>
+</div>
+ <ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">手工皮具</a>
+	<div class="dropdown-content">
+	  <a href="#C3">作品展览馆</a>
+      <a href="#C4">表带 STRAP</a>
+      <a href="#C5">笔记本 NOTEBOOK</a>
+	  <a href="#">皮料介绍</a>
+      <a href="#">其他技法</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">折纸</a>
+    <div class="dropdown-content">
+      <a href="#">作品展览馆</a>
+      <a href="#">CP图</a>
+      <a href="#">流程图</a>
+	  <a href="#">其他技法</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">音乐</a>
+    <div class="dropdown-content">
+      <a href="#">Wedding 100</a>
+	  <a href="#">纯音乐/古典</a>
+      <a href="#">粤语流行</a>
+      <a href="#">欧美流行</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">电影</a>
+    <div class="dropdown-content">
+      <a href="#">top250</a>
+      <a href="#">个人收藏馆</a>
+      <a href="#">探索</a>
+    </div>
+  </li>
+  <li style="float:right"><a class="active" href="#" >关于我</a></li>
+</ul>
+
+
+
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>手工皮具</h2>
+      <h3><a id="C4">表带 STRAP</a></h3>
+		<i class="fas fa-align-justify"></i>
+		<div class="fakeimg" style="height:400px;"><span class="fakeimg" style="height:400px;"><a id="C3">作品展览馆</a></span><br /><p><img src="D:\pic\handmade-1.jpg" alt="blank" width="200" height="200"><img src="D:\pic\handmade-2.jpg" alt="blank" width="200" height="200"><img src="D:\pic\handmade-3.jpg" alt="blank" width="200" height="200"><img src="D:\pic\handmade-4.jpg" alt="blank" width="200" height="200"></p>
+	  <p>&nbsp;</p></div>
+    <section>
+      <h4>·表带制作心得</h4>
+      <p>1.	A4打印纸，粗裁切，使用无尘棉签擦拭白胶贴至牛皮纸上，利用尺子、裁纸刀精细切出版型。（长半：表皮长方形、底皮、弯折方片、起鼓垫芯*2；短半：表皮长方形、底皮、弯折方块*2、起鼓垫芯*2）<br />
+        2.	底皮Zermatt的精切割*2，讲求两边弧度一致，对接弯折处平整：<br />由于牛皮纸手切打板两边弧度不会相同，以弧度优美的一边作为切割模板，将牛皮纸正反进行切皮。由正变反时，以24mm边、24mm对应的拐角宽度作为基点切割另一边。一定要注意横线够直够平，在弯折画线时也一定要直要精细。<br />
+        3.	起鼓垫芯的切割*2*2，讲求两边弧度一致，对接弯折处平整：（同上）<br />
+        4.	表皮长方形，切割好后，直角尺（也可以用小的尺子），配合方块精准画出边线。边线外全部削薄（玻璃板）。<br />
+        5.	将牛皮纸底板的垫芯部分切去，边线器对着（1.5+2.0+1.0的宽度），用力划擦24mm直线处，标记开头垫芯放置位置。大概摆放，边线器慢慢延弧度测量，使垫芯完全处于正中心。上白胶，两边一起上，要够薄。垫芯小心轻放于原来标记的位置，边线器辅助延弧度测量，确定好后压紧垫芯。<br />
+        6.	弯折测试与标记横线。测量挖着所需要的大概宽度，将zermatt同样宽度磨粗，垫芯底皮反向放在标记线处，借助生耳模拟弯折情形，画出弯折处，一定要精细平整。<br />
+        7.	宽度两面上胶，倒贴，底皮24mm横线对准生耳弯折直线，压紧。<br />
+        8.	两边上胶，注意，底皮除垫芯外细缝也要小心涂胶水。对贴，先确保弯折对贴头部直线平整，手指压一下一开始削薄标注线。其次滚平表皮与垫芯表面接触面。再者，牛骨刀/边线器轻轻划线，多画几次。最后，边线器尖尖（和平扁处）划出生耳管形（正反）。牛骨刀压平起鼓芯其余缝隙。<br />
+        9.	裁纸刀比裁皮刀更为精细！背过来，边边放在切割板边边，压紧，切割。生耳处注意宽度，可以使用牛皮纸/游标卡尺划线 来标记。<br />
+        10.	划线确认好后，打斩，尖角处可以先用锋利尖尖标记一下，从此打斩会更为显弧度、拐弯。<br />
+        11.	生胶片除黑线/在粘贴时垫芯外的缝隙全部向外涂水，一定要去得完全。一次打磨（240/400目），大致让两边弧度、与斩位距离相同。上床面剂，干后削边。800目打磨，主要控制好弧度相同、直线够直、二者过度圆润、生耳接近24mm。1000/1200目，磨细磨平。2000目，极致。画边线。<br />
+        12.	对于表扣表环。短半两边削薄，需要很小心。两边弯贴不用同时进行，塑形完后再再贴表扣一边。对于表扣舌的打孔，2mm+裁皮刀即可，需要用到游标卡尺、边线器。以后要打冲斩的，先标记，确认好后小心打斩。<br />
+        13.	表环的安装，先用诚和处理床面→打磨光亮→处理两边，容貌内收→等待干后，压边线。<br />
+        14.	套入表环安装：测量二带子重叠的厚度，制作一个相同的棱角柱条。沿着压边线打斩，一边一条线2斩→缝线，波浪、两头分别回一针，内燃烧结线→放在柱条上敲打出棱角。<br />镶嵌式表环安装：尖物戳开适当位置，制造宽度，模拟塞入表环，标记塞入深度，一定要让两个表环相同形。<br />对一边二次打斩表环塞入处，套入表环，开始缝制，先缝一边，嵌入式表带呈直线。缝制第二边，塞入侧面打斩。<br />
+        15.	打孔。将22mm宽的牛皮纸打孔版型对在24-22mm的22mm线条上，将提前打好孔的版型再次打皮，为求精准，可以再版型圆形矩阵上画垂直中线，并且在打孔前标记确认正中心。<br />
+      </p>
+    </section>
+		
+	</p>
+	<p>·参考视频1</p>
+      <p>
+		<a href="https://www.youtube.com/watch?v=vLP3GSlFhYo&t=1s" target="_blank">点击观看EQUUS表带制作过程</a>
+	</p>
+	</div>
+	<div class="leftcolumn">
+      <div class="card">
+      <h5><a id="C5">笔记本 NOTEBOOK</a></h5>
+      <div class="fakeimg" style="height:400px;"><span class="fakeimg" style="height:400px;">作品展览馆<br/><p><img src="D:\pic\1.jpg" alt="blank" width="250" height="250"></p></span></div>
+      <p>·制作心得</p>
+      <p>
+		1.	A4纸打印，切粗形黏贴在牛皮纸上，精细划切出版型，小件用白胶，大件用双面胶，大小相同用一个精美的版型即可。<br />
+		2.	注意更换刀片，保持最锋利切割状态。<br />
+		3.	切割皮料版型。务必使用玻璃板、切割垫板、皮镇压好牛皮纸与皮料，划线，裁纸刀切割。圆润处、拐弯、非直线处压紧牛皮纸直接精细划切出版型。<br />
+		4.	皮面与肉面处理。<br />
+		5.	起鼓、划线、打斩注意点。①这两个部分起鼓明显、走线津贴起鼓边、边线紧贴走线、边线走线宽度紧凑且远小于起鼓芯是最优美的。②划线规随着起鼓芯边而调整至最紧凑。可调边线器③塑形要出力，不要怕刮花，出形。两面都要上白胶，柔软状态。④为了更优美，可以用1号削边器削边起鼓芯
+	如果太宽，高阶：切边，再压边线、打斩<br />
+		高阶：打斩，缝线。切多余边，再压边线，最后削边。<br />
+		高阶：扣扣、表带肉层边线砂纸打磨。<br />
+		6.	制作扣扣，准备好3个部件，<br />
+		7.	制作表带，制作好后，插入书衣缝合的表面部分削薄（认真）。走一个正方形的缝线。<br />
+	高阶：正方形处肉层也打磨<br />
+		8.	书衣部分，①先压边线。②划线规画出斩线，肉面砂纸（粗砂），四周打磨，效果相当于削薄，接下来每一层都如此。每次黏贴，都要压紧。只黏贴四周！<br />
+		9.	外皮切割，划线，先打斩，定好位<br />
+		10.	内皮切割，肉层划线，其余贴美纹胶带防胶溢出，双面上胶，湾贴，切除多余皮料。表皮砂纸打磨。<br />
+		11.	卡位*2切割，①先压边线。②肉层划线，其余贴美纹胶带防胶溢出，双面上胶，沿外皮斩轨迹打斩。<br />
+		12.	打磨封边，严格按照240-400-800-1200多次打磨，每次打磨完后抛光。<br />
+</p>
+	</div>
+
+<hr/>
+    <div class="card">
+      <h2>折纸</h2>
+      <h3>作品展览馆</h3>
+		<i class="fas fa-align-justify"></i>
+		<div class="fakeimg" style="height:400px;"><span class="fakeimg" style="height:400px;"></span><img src="pic/1-1.JPG" alt="blank" width="200" height="200"><img src="pic/1-2.JPG" alt="blank" width="200" height="200"><img src="pic/1-3.JPG" alt="blank" width="200" height="200"></div>
+      以上是我的代表作品，详情可以进入我的instagram主页查看
+	<a href="https://www.instagram.com/liring_liang/" target="_blank">Liring_liang'page</a>
+    </div>
+  </div>
+ </div>
+ 
+ <hr/>
+	<div class="leftcolumn">
+    <div class="card">
+      <h2>音乐</h2>
+      <h3>Wedding 100</h3>
+		<i class="fas fa-align-justify"></i>
+		<div class="fakeimg" style="height:400px;"><span class="fakeimg" style="height:400px;"></span><br /><p><img src="pic/2-1.jpg" alt="blank" width="200" height="200"><img src="pic/2-2.jpg" alt="blank" width="200" height="200"><img src="pic/2-3.jpg" alt="blank" width="200" height="200"><img src="pic/2-4.jpg" alt="blank" width="200" height="200"></p></div>
+      <p>*点击以上图片即可播放相应的音乐      </p>
+      <p>other</p>
+	<p>·参考视频1</p>
+	</div>
+	</div>
+ </body>
+</html>
